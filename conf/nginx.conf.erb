@@ -12,6 +12,7 @@ http {
   types_hash_max_size 2048;
   include mime.types;
   default_type  application/octet-stream;
+  underscores_in_headers on;
   
   server {
     listen <%= ENV["PORT"] %>;
