@@ -19,5 +19,7 @@ http {
       root /app/www;
     <% end %>
     index index.html;
+    add_header Vary Accept-Encoding;
+
   }
 }
