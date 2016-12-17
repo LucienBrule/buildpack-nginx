@@ -1,3 +1,8 @@
+**Forked form [buildpack-ngnix](https://github.com/florianheinemann/buildpack-nginx) **
+- implements things like gzipping and "Vary: Accept-Encoding" that are not propogated from the root dokku nginx server.
+
+###
+
 # NGINX Buildpack for Dokku - Hosting static pages
 This buildpack has been successfully run on Digital Ocean instances of Ubuntu 14.04 (Status: Jan 2015). It might also work with different configurations.
 
