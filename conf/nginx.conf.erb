@@ -60,7 +60,7 @@ http {
         text/x-component
         text/x-cross-domain-policy;
     location ~* \.(?:ico|css|js|gif|jpe?g|png|pdf)$ {
-        expires 10d;
+        expires 30d;
         add_header Pragma public;
         add_header Cache-Control "public";
     }
