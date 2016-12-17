@@ -59,9 +59,12 @@ http {
         text/x-component
         text/x-cross-domain-policy;
     location ~* \.(?:ico|css|js|gif|jpe?g|png|pdf)$ {
-        expires 1d;
+        expires 10d;
         add_header Pragma public;
         add_header Cache-Control "public";
+    }
+    location / {
+      add_header Vary Accept-Encoding;
     }
 
   }
